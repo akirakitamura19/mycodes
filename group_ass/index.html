@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+    
+    <!-- Costom CSS -->
+    <link rel="stylesheet" href="css/homepage-style.css" type="text/css">
+    <title>Project Conviction Record</title>
+</head>
+
+<body>
+	
+	
+		<div class="navbar navbar-fixed-top">
+			<div class="container">
+
+				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="http://www.archives.qld.gov.au/Pages/default.aspx"><img src="images/logo.jpg" height="50px" ="" alt="logo"></a>
+
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+
+						<li class="active">
+							<a href="index.html">Home</a>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Visualizations<strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li>
+									<a href="map_visualization.html">British Area Map</a>
+								</li>
+								<li>
+									<a href="#">Shipping map</a>
+								</li>
+								<li>
+									<a href="#">Data summaries</a>
+								</li>
+							</ul><!-- end dropdown menu -->
+						</li>
+
+						<li>
+							<a href="https://data.qld.gov.au/dataset/convict-register-chronological-1824-to-1839">DataBase</a>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Login <strong class="caret"></strong></a>
+								
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+									</li>
+									
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Data</a>
+									</li>
+									
+									<li class="divider"></li>
+									
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+									</li>
+								</ul>
+							</li>
+						</ul><!-- end nav pull-right -->
+
+				</div><!-- end nav-collapse -->
+
+			</div><!-- end container -->
+		</div><!-- end navbar -->
+
+
+	<div class="container">
+
+		<div class="row description">
+			<h1 class="center">Convict Record</h1><br>
+			<div class="col-sm-6">
+				<h3 class="center">Convict register (chronological) 1824 to 1839</h3><br>
+			    <p> These indexes were compiled from the Chronological register of convicts (Crown prisoners) at Moreton Bay penal settlement as kept by the Commandant's Office, Moreton Bay, from 1824 to 1839. The register is divided into three main sections: a (Part 1) Chronological Register of Convicts by ship's arrival date, with an alphabetical index by convict name in the front of the register. (Part 2) List of Prisoners in the Ordinary Service of the Crown at Moreton Bay October 21st, 1839. (Part 3) an Alphabetical listing by surname of the prisoners' personal details including height, complexion, eye and hair colour, age, religion and native place.</p>
+	    	</div>
+
+
+			<div class="col-sm-6">
+				<h3 class="center">Data Visualization Project</h3><br>
+			    <p> Project Conviction Record provides three different types of the data visualizations. One of them is the map visualization of England, which gives that each suburb of England had how many convicts there are. Second one is the data summary of conviction data set.There are several diagrams and discription of Conviction data set to find the features. Last one is Shipping map, which able to track the route from England to Australia of ships in response to each suburb of England. They help you to find features of conviction record clearly.</p>
+	    	</div>
+	    </div><br><br>
+
+		<h1 class="center">Visualizations</h1><br />
+
+		<div class="row">
+
+			<div class="col-sm-4 feature effect-marley">
+		       <a href="map_visualization.html"> <img src="images/mapping.jpg" alt="British Area Map" > </a>
+		        <figcaption>
+	        		<h3>British Area Map</h3>
+	        		<p>One of them is the mapping of conviction data, which give the numbers of convictions from defferent regions of United Kingdom.</p>
+	        		<a href="http://www.google.com"></a>
+	        	</figcaption>
+	        </div><!-- end col-sm-4 -->
+
+	        <div class="col-sm-4 feature effect-marley">
+	        	<img src="images/new-shipping-map.jpg" alt="Shipping map">
+	        	<figcaption>
+	        		<h3>Shipping map</h3>
+	        		<p>A lot of convicts came to Australia from UK in around 19th century. This is the map of ships which you can track.</p>
+	        		<a href="http://www.google.com"></a>
+	        	</figcaption>
+	        </div><!-- end col-sm-4 -->
+
+	        <div class="col-sm-4 feature effect-marley">
+	        	<img src="images/data-summary.jpg" alt="Data Summaries">
+	        	<figcaption>
+	        		<h3>Data Summaries</h3>
+	        		<p>The other is the data summary of conviction data set.There are several bar charts and discription of Conviction data set.</p>
+	        		<a href="http://www.google.com"></a>
+	        	</figcaption>
+	        </div><!-- end col-sm-4 -->     
+		</div><!-- end row -->
+	</div><!-- end container -->
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+				<h6>&copy; 2016 The State of Queensland - Queensland State Archives</h6>
+				</div><!-- end col-sm-2 -->
+				
+				<div class="col-sm-4">
+					<h6>About Us</h6>
+					<p>These indexes were compiled from the Chronological register of convicts (Crown prisoners) at Moreton Bay penal settlement as kept by the Commandant's Office, Moreton Bay, from 1824 to 1839. Read more about the <a href="http://www.archives.qld.gov.au/Researchers/Indexes/Convicts/Pages/ChronologicalRegister.aspx">[register of convicts]</a></p>
+				</div><!-- end col-sm-4 -->
+				
+				<div class="col-sm-2">
+					<h6>Navigation</h6>
+					<ul class="unstyled">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">British Area Map</a></li>
+						<li><a href="#">Shipping map</a></li>
+						<li><a href="#">Data Summaries</a></li>
+					</ul>
+				</div><!-- end col-sm-2 -->
+				
+				<div class="col-sm-2">
+					<h6>Follow Us</h6>
+					<ul class="unstyled">
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Google Plus</a></li>
+					</ul>
+				</div><!-- end col-sm-2 -->
+				
+				<div class="col-sm-2">
+					<h6>Coded with <span class="glyphicon-class glyphicon-pencil"></span> by Holmes in University of Queensland</h6>
+				</div><!-- end col-sm-2 -->
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</footer>
+	
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<body>	
+</html>

@@ -1,0 +1,545 @@
+<html>
+<head>
+
+<title>England Map Visualization</title>
+
+
+
+	<!-- new -->
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+ 
+
+
+
+<!-- Originals -->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+</head>
+
+<body>
+
+
+
+<!-- new -->
+<header>
+<div class="navbar navbar-fixed-top">
+	<div class="container">
+
+		<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+		<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<a class="navbar-brand" href="http://www.archives.qld.gov.au/Pages/default.aspx"><img src="images/logo.jpg" height="50px" ="" alt="logo"></a>
+
+		<div class="nav-collapse collapse navbar-responsive-collapse">
+			<ul class="nav navbar-nav">
+
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+
+				<li class="dropdown active">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Visualizations<strong class="caret"></strong></a>
+
+					<ul class="dropdown-menu">
+						<li>
+							<a href="map_visualization.html">British Area Map</a>
+						</li>
+						<li>
+							<a href="#">Shipping map</a>
+						</li>
+						<li>
+							<a href="#">Data summaries</a>
+						</li>
+					</ul><!-- end dropdown menu -->
+				</li>
+
+				<li>
+					<a href="https://data.qld.gov.au/dataset/convict-register-chronological-1824-to-1839">DataBase</a>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav pull-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Login <strong class="caret"></strong></a>
+						
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+							</li>
+							
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Data</a>
+							</li>
+							
+							<li class="divider"></li>
+							
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+							</li>
+						</ul>
+					</li>
+				</ul><!-- end nav pull-right -->
+
+		</div><!-- end nav-collapse -->
+
+	</div><!-- end container -->
+</div><!-- end navbar -->
+</header>
+
+
+
+<div class="container main">
+<section>
+<img src="bg.png" width="630" class="bg" />
+<img src="area/other.png" id="basic" class="other" onClick="Area(1)">
+<img src="area/aera1.1.png"  id="basic" width="181" height="240" class="area1" onClick="Area(1)"/>
+<img src="area/area2.png" id="basic" class="area2" onClick="Area(2)" />
+<img src="area/area3.png" id="basic" class="area3" onClick="Area(3)"/>
+<img src="area/area4.png" id="basic" class="area4" onClick="Area(4)"/>
+<img src="area/area5.png" id="basic" class="area5" onClick="Area(5)"/>
+<img src="area/area6.png" id="basic" class="area6" onClick="Area(6)"/>
+<img src="area/area7.png" id="basic" class="area7" onClick="Area(7)"/>
+<img src="area/area8.png" id="basic" class="area8" onClick="Area(8)"/>
+<img src="area/area9.png" id="basic" class="area9" onClick="Area(9)"/>
+<img src="area/area10.png" id="basic" class="area10" onClick="Area(10)"/>
+<img src="area/area11.png" id="basic" class="area11" onClick="Area(11)"/>
+<img src="area/area12.png" id="basic" class="area12" onClick="Area(12)"/>
+
+<div id="popupbox" class="popup-position">
+dfasdfa
+dafsdfasdf
+asdfasdf
+  <div id="popup-wrapper">
+  dfasdfa
+dafsdfasdf
+asdfasdf
+     <div id="popup-container">
+       <h3>Convict Data</h3>
+       <div id="dataContainer">
+       </div>
+       <a onClick="Information()">123123</a>
+       14123
+       124123
+       <p><a href="javascript:void(0)" onClick="PopUp('popupbox')">close box</a></p>
+       
+     </div>
+   </div>
+</div>
+</section>
+
+
+<div id="popupboxeast" class="popup-position">
+    <div id="popup-wrapper">
+        <img src="images/east6.png" width="500" height="597" usemap="#eastmap" border="0">
+        <map name="eastmap">
+          <area shape="poly"  alt="east1" onClick="laopo()" id="east1" coords="188,459,109,464,124,474,78,486,58,505,51,516,79,530,146,526,185,534,218,533,206,545,277,546,338,532,389,516,437,485,440,472,380,450" >         
+          <area shape="poly" alt="east2" coords="112,389,123,396,68,417,52,440,84,455,161,452,184,459,216,457,277,454,371,447,444,407,445,387,370,370,129,386">
+          <area shape="poly" alt="east3" coords="199,305,137,308,70,340,58,365,90,379,174,376,354,368,399,361,444,326,420,307,378,298,353,294">
+          <area shape="poly" alt="east3" coords="180,227,112,231,66,261,45,290,79,305,160,297,183,302,349,292,402,283,444,246,425,227,354,217">
+          <area shape="poly" alt="east4" coords="216,149,119,158,83,182,51,213,87,224,126,227,168,225,372,217,404,208,445,189,453,168,417,150,360,140">
+          <area shape="poly" alt="east5" coords="120,76,52,136,107,153,170,147,183,150,363,140,409,128,449,105,457,85,387,65,263,59">
+        </map>   
+        
+ <div id="popup-container">
+ <p><a href="javascript:void(0)" onClick="PopUp('popupboxeast')">Close</a></p>
+ </div>
+ 
+    </div>
+</div>
+
+<div id="popupboxscotland" class="popup-position">
+    <div id="popup-wrapper">
+        <img src="images/scotland6.png" width="500" height="597" usemap="#scotlandmap" border="0"> 
+               
+        <map name="scotlandmap">   
+                <area shape="poly"  alt="scot1" onClick="laopo()" id="east1" coords="188,459,109,464,124,474,78,486,58,505,51,516,79,530,146,526,185,534,218,533,206,545,277,546,338,532,389,516,437,485,440,472,380,450" >         
+          <area shape="poly" alt="scot2" coords="112,389,123,396,68,417,52,440,84,455,161,452,184,459,216,457,277,454,371,447,444,407,445,387,370,370,129,386">
+          <area shape="poly" alt="scot3" coords="199,305,137,308,70,340,58,365,90,379,174,376,354,368,399,361,444,326,420,307,378,298,353,294">
+          <area shape="poly" alt="scot3" coords="180,227,112,231,66,261,45,290,79,305,160,297,183,302,349,292,402,283,444,246,425,227,354,217">
+          <area shape="poly" alt="scot4" coords="216,149,119,158,83,182,51,213,87,224,126,227,168,225,372,217,404,208,445,189,453,168,417,150,360,140">
+          <area shape="poly" alt="scot5" coords="120,76,52,136,107,153,170,147,183,150,363,140,409,128,449,105,457,85,387,65,263,59">
+        </map>   
+    </div>
+</div>
+
+<div id="popupboxeastmidlands" class="popup-position">
+    <div id="popup-wrapper">
+        <img src="images/eastmidlands6.png" width="500" height="597" usemap="#eastmidlandsmap" border="0">        
+        <map name="eastmidlandsmap">                  
+        </map>   
+    </div>
+</div>
+
+<div id="popupboxireland" class="popup-position">
+    <div id="popup-wrapper">
+        <img src="images/ireland6.png" width="500" height="597" usemap="#irelandsmap" border="0">        
+        <map name="irelandsmap">                  
+        </map>   
+    </div>
+</div>
+	
+<div id="popupboxlondon" class="popup-position">
+    <div id="popup-wrapper">
+        <img src="images/london6.png" width="500" height="597" usemap="#londonmap" border="0">        
+        <map name="londonmap">                  
+        </map>   
+    </div>
+</div>
+
+<div id="popupboxnortheast" class="popup-position">
+    <div id="popup-wrapper">
+        <img src="images/north east6.png" width="500" height="597" usemap="#northeastmap" border="0">        
+        <map name="northeastmap">                  
+        </map>   
+    </div>
+</div>
+
+<div id="popupboxnorthwest" class="popup-position">
+    <div id="popup-wrapper">
+        <img src="images/north west6.png" width="500" height="597" usemap="#northwestmap" border="0">        
+        <map name="northwestmap">                  
+        </map>   
+    </div>
+</div>
+
+<div id="popupboxsoutheast" class="popup-position">
+    <div id="popup-wrapper">
+
+        <img src="images/south east6.png" width="500" height="597" usemap="#southeastmap" border="0">        
+        <map name="southeastmap">                  
+        </map>   
+    </div>
+</div>
+
+<div id="popupboxsouthwest" class="popup-position">
+    <div id="popup-wrapper">
+        <img src="images/south west6.png" width="500" height="597" usemap="#southwestmap" border="0">        
+        <map name="southwestmap">                  
+        </map>   
+    </div>
+</div>
+
+<div id="popupboxwales" class="popup-position">
+    <div id="popup-wrapper">
+        <img src="images/wales6.png" width="500" height="597" usemap="#walesmap" border="0">        
+        <map name="walesmap">                  
+        </map>   
+    </div>
+</div>
+
+<div id="popupboxwestmidlands" class="popup-position">
+    <div id="popup-wrapper">
+        <img src="images/westmidlands6.png" width="500" height="597" usemap="#westmidlandsmap" border="0">        
+        <map name="westmidlandsmap">                  
+        </map>   
+    </div>
+</div>
+
+<div id="popupboxyorkshire" class="popup-position">
+    <div id="popup-wrapper">
+        <img src="images/yorkshire6.png" width="500" height="597" usemap="#yorkshiremap" border="0">        
+        <map name="yorkshiremap">                  
+        </map>   
+    </div>
+</div>
+
+
+
+<p>British Area Map visualization is built for the "Convicts Moreton Bay Original Data - Description Register of Convicts" dataset. It shows details of convicts based on their native places. The data will shown on different areas of map, you can start to explore the records by clicking the map.
+</p>
+
+
+
+
+<!-- new -->
+	<footer>
+	
+		<div class="row">
+			<div class="col-sm-2">
+			<h6>&copy; 2016 The State of Queensland - Queensland State Archives</h6>
+			</div><!-- end col-sm-2 -->
+			
+			<div class="col-sm-4">
+				<h6>About Us</h6>
+				<p>These indexes were compiled from the Chronological register of convicts (Crown prisoners) at Moreton Bay penal settlement as kept by the Commandant's Office, Moreton Bay, from 1824 to 1839. Read more about the <a href="http://www.archives.qld.gov.au/Researchers/Indexes/Convicts/Pages/ChronologicalRegister.aspx">[register of convicts]</a></p>
+			</div><!-- end col-sm-4 -->
+			
+			<div class="col-sm-2">
+				<h6>Navigation</h6>
+				<ul class="unstyled">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">British Area Map</a></li>
+					<li><a href="#">Shipping map</a></li>
+					<li><a href="#">Data Summaries</a></li>
+				</ul>
+			</div><!-- end col-sm-2 -->
+			
+			<div class="col-sm-2">
+				<h6>Follow Us</h6>
+				<ul class="unstyled">
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Google Plus</a></li>
+				</ul>
+			</div><!-- end col-sm-2 -->
+			
+			<div class="col-sm-2">
+				<h6>Coded with <span class="glyphicon-class glyphicon-pencil"></span> by Holmes in University of Queensland</h6>
+			</div><!-- end col-sm-2 -->
+		</div><!-- end row -->
+	
+	</footer>
+</div><!-- end container -->
+
+
+
+
+
+<script>
+/*Global Variable*/
+var dataset = [];
+
+var temp = [];
+
+var agedata = [];
+
+var agetemp = [];
+
+/*Age Group Pop Up Layer*/
+function Change(id){
+	var a = document.getElementById(id);
+	var b = 'img';
+	if(a.style.display =='block'){
+		b.style.display ='none';
+	}
+	else{
+	
+	}
+		
+}
+
+function PopUp(id){
+	var a = document.getElementById(id);
+	if(a.style.display =='block'){
+		a.style.display ='none';
+	}
+	else{
+		a.style.display ='block';
+	}
+}
+
+/*Data Abstraction*/
+function calldata(){
+
+	 $.ajax({
+
+        url: "http://deco3800-holmes.uqcloud.net/importdata.php",
+        type: 'GET',
+        callback: '?',
+        datatype: 'application/json', 
+		success: function(data) {
+			passData(data);
+		},
+        error: function() { alert('Failed!'); }
+		
+    });
+	
+}
+
+
+function passData(list){
+	var myData = list;
+	dataset = myData;
+	console.log(myData[1]);
+	console.log(dataset);
+}
+
+///////////////////////////////////////////
+function Area(areano){
+	agedata = [];
+	if(areano == 1){
+		temp = dataset.slice(0,285);
+		PopUp('popupboxireland');
+	}
+    if(areano == 2){
+		temp = dataset.slice(286,380);
+		PopUp('popupboxscotland');
+	}
+	if(areano == 3){
+		temp = dataset.slice(381,560);
+		PopUp('popupboxnorthwest');
+	}
+	if(areano == 4){
+		temp = dataset.slice(561,574);
+		PopUp('popupboxnortheast');
+	}
+	if(areano == 5){
+		temp = dataset.slice(575,654);
+		PopUp('popupboxyorkshire');
+	}
+	if(areano == 6){
+		temp = dataset.slice(655,676);
+		PopUp('popupboxwales');
+	}
+	if(areano == 7){
+		temp = dataset.slice(677,828);
+		PopUp('popupboxwestmidlands');
+	}
+	if(areano == 8){
+		temp = dataset.slice(829,891);
+		PopUp('popupboxeastmidlands');
+	}
+	if(areano == 9){
+		temp = dataset.slice(892,1031);
+		PopUp('popupboxsouthwest');
+	}
+	if(areano == 10){
+		temp = dataset.slice(1032,1144);
+		PopUp('popupboxsoutheast');
+	}
+	if(areano == 11){
+		temp = dataset.slice(1145,1454);
+		PopUp('popupboxlondon');
+	}
+	if(areano == 12){
+		temp = dataset.slice(1455,1555);
+		PopUp('popupboxeast');
+	}
+	console.log(temp);
+	Ageinfo(temp);
+	
+	console.log(agedata);
+
+}
+
+function Information(){
+	var listItem = [];
+//	for(i=0;i<temp.length;i++){
+	//		listItem.push('<li onClick="display()">'+temp[i][3]+'</li>');
+	//}
+	
+	for(i=0;i<temp.length;i++){
+			listItem.push('<li onClick="display()">'+temp[i][3]+'</li>');
+	}
+	document.getElementById('dataContainer').innerHTML = "<ul>"+listItem+"</ul>";
+		
+}
+
+
+function display(word){
+	alert(word);
+	}
+
+function Ageinfo(temp,layerno){
+	var sumofage1 = 0;
+	var sumofage2 = 0;
+	var sumofage3 = 0;
+	var sumofage4 = 0;
+	var sumofage5 = 0;
+	var sumofage6 = 0;
+	var sumofarea = temp.length;
+	
+	for(i=0;i<temp.length;i++){
+		if(temp[i][5]<20) {
+		    sumofage1 += 1;
+			if(layerno==1){
+				agetemp.push(temp[i]);
+			}
+		}
+		if(20<=temp[i][5]&&temp[i][5]<30){
+		    sumofage2 += 1;
+			if(layerno==2){
+				agetemp.push(temp[i]);
+			}
+		}
+		if(30<=temp[i][5]&&temp[i][5]<40){
+		     sumofage3 += 1;
+			 if(layerno==3){
+				agetemp.push(temp[i]);
+			}
+		}
+		if(40<=temp[i][5]&&temp[i][5]<50){
+		    sumofage4 += 1;
+			if(layerno==4){
+				agetemp.push(temp[i]);
+			}
+		}
+		if(50<=temp[i][5]&&temp[i][5]<60){
+		    sumofage5 += 1;
+			if(layerno==5){
+				agetemp.push(temp[i]);
+			}
+		}
+		if(temp[i][5]>=60){
+		    sumofage6 += 1;
+			if(layerno==6){
+				agetemp.push(temp[i]);
+			}
+		}
+	
+	}
+	
+	var rate1 = sumofage1 / sumofarea;
+	rate1 = rate1.toFixed(4);
+	var rate2 = sumofage2 / sumofarea;
+	rate2 = rate2.toFixed(4);
+	var rate3 = sumofage3 / sumofarea;
+	rate3 = rate3.toFixed(4);
+	var rate4 = sumofage4 / sumofarea;
+	rate4 = rate4.toFixed(4);
+	var rate5 = sumofage5 / sumofarea;
+	rate5 = rate5.toFixed(4);
+	var rate6 = sumofage6 / sumofarea;
+	rate6 = rate6.toFixed(4);
+	
+	agedata.push(sumofarea);
+	agedata.push(sumofage1);
+	agedata.push(sumofage2);
+	agedata.push(sumofage3);
+	agedata.push(sumofage4);
+	agedata.push(sumofage5);
+	agedata.push(sumofage6);
+	agedata.push(rate1);
+	agedata.push(rate2);
+	agedata.push(rate3);
+	agedata.push(rate4);
+	agedata.push(rate5);
+	agedata.push(rate6);
+	
+	
+}
+
+
+
+
+
+
+</script>
+
+<!-- new -->
+<!-- First try for the online version of jQuery-->
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>

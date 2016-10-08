@@ -1,0 +1,100 @@
+
+
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+	font-weight: 400;
+	line-height: 34px;
+	background: #2f3238;
+	color: #fff;
+	margin: auto;
+}
+
+.navbar .container .navbar-brand {
+	padding: 0 20px 0 0;
+}
+
+.description {
+	margin-top: 100px;
+}
+
+.center {
+	text-align: center;
+}
+
+footer {
+	margin-top: 80px; 
+	border-top:  1px solid #fff;
+	padding: 3em 0;
+}
+
+footer .unstyled{
+	list-style: none;
+	padding: 0;
+}
+
+
+
+.feature img {	
+	max-width: 100%;
+	opacity: 0.5;
+}
+
+
+.effect-marley figcaption {
+	text-align: right;
+}
+
+.effect-marley h3,
+.effect-marley p {
+	position: absolute;
+	right: 30px;
+	left: 30px;
+	padding: 10px 0;
+}
+
+
+.effect-marley p {
+	bottom: 50px;
+	line-height: 1.5;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+.effect-marley h3 {
+	top: 30px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+.effect-marley:hover h3 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.effect-marley h3::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #fff;
+	content: '';
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+.effect-marley h3::after,
+.effect-marley p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-marley:hover h3::after,
+.effect-marley:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
